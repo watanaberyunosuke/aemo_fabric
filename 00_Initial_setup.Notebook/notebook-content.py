@@ -86,7 +86,12 @@ for notebook_id_or_name in ["Process_Data_Every_24_Hours", "Process Data Every 5
 
 # CELL ********************
 
-notebookutils.notebook.run("Process_Data_Every_24_Hours", 2000,{"Nbr_Files_to_Download": 1 })
+notebookutils.notebook.run(
+    "Process_Data_Every_24_Hours",
+    2000,
+    {"Nbr_Files_to_Download": 1, "useRootDefaultLakehouse": True}
+)
+
 
 # METADATA ********************
 
@@ -149,6 +154,16 @@ labs.directlake.update_direct_lake_model_lakehouse_connection("Semantic_Model", 
 # CELL ********************
 
 labs.refresh_semantic_model("Semantic_Model")
+
+# METADATA ********************
+
+# META {
+# META   "language": "python",
+# META   "language_group": "synapse_pyspark"
+# META }
+
+# CELL ********************
+
 
 # METADATA ********************
 
