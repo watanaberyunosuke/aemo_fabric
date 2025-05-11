@@ -8,8 +8,14 @@
 # META   },
 # META   "dependencies": {
 # META     "lakehouse": {
-# META       "default_lakehouse_name": "",
-# META       "default_lakehouse_workspace_id": ""
+# META       "default_lakehouse": "06fc75af-3a17-4336-a15f-610166648b5d",
+# META       "default_lakehouse_name": "storage",
+# META       "default_lakehouse_workspace_id": "c839d7f5-f148-46af-b241-334e7c3b7693",
+# META       "known_lakehouses": [
+# META         {
+# META           "id": "06fc75af-3a17-4336-a15f-610166648b5d"
+# META         }
+# META       ]
 # META     }
 # META   }
 # META }
@@ -21,7 +27,7 @@
 # CELL ********************
 
 default_lakehouse ="storage"
-default_lakehouse_workspace_id = ""
+default_lakehouse_workspace_id = "AEMO_Fabric"
 
 
 # METADATA ********************
@@ -131,7 +137,7 @@ from sempy_labs.tom import connect_semantic_model
 
 # CELL ********************
 
-report.report_rebind_all("Semantic_Model", "Semantic_Model")
+report.report_rebind_all("Semantic_Model_Stg", "Semantic_Model")
 
 # METADATA ********************
 

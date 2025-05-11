@@ -1,0 +1,29 @@
+relationship Relationship
+	fromColumn: scada.DUID
+	toColumn: duid.DUID
+
+relationship 'Relationship 1'
+	fromColumn: scada.SETTLEMENTDATE
+	toColumn: mstdatetime.SETTLEMENTDATE
+
+relationship 'Relationship 2'
+	fromColumn: scada.DATE
+	toColumn: calendar.date
+
+relationship 'Relationship 3'
+	fromColumn: price.DATE
+	toColumn: calendar.date
+
+relationship 'Relationship 4'
+	fromColumn: price.REGIONID
+	toColumn: states.RegionID
+
+relationship 'Relationship 5'
+	crossFilteringBehavior: bothDirections
+	fromColumn: duid.Region
+	toColumn: states.RegionID
+
+relationship 'Relationship 6'
+	fromColumn: price.SETTLEMENTDATE
+	toColumn: mstdatetime.SETTLEMENTDATE
+

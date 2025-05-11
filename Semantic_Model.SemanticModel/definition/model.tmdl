@@ -1,0 +1,19 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.129.7266.1 (Main)
+
+annotation PBI_ProTooling = ["WebModelingEdit"]
+
+ref table duid
+ref table scada
+ref table mstdatetime
+ref table calendar
+ref table price
+ref table states
+
+ref cultureInfo en-US
+

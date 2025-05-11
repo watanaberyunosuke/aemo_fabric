@@ -1,0 +1,61 @@
+table calendar
+	lineageTag: 74f2b37b-7d6e-4238-b6ea-649ad71f7563
+	dataCategory: Time
+
+	measure Mw =
+			var var_max=TODAY()
+			RETURN
+			CALCULATE(sum(scada[INITIALMW]),filter(scada,scada[INTERVENTION]=0 && scada[PRIORITY]=1 ),filter('calendar', 'calendar'[date]< var_max)) +
+			CALCULATE(sum(scada[INITIALMW]),filter(scada,scada[INTERVENTION]=0 && scada[PRIORITY]=0 ),filter('calendar', 'calendar'[date]>= var_max))
+		lineageTag: ce6f7910-facb-44c4-967e-9a146668d1dc
+
+	measure Mwh = [Mw]/12
+		lineageTag: c63b0fa5-24ce-41e8-9d7c-d5949cbeb92c
+
+	measure Price_AVG =
+			CALCULATE(AVERAGE('price'[RRP]),filter('price','price'[INTERVENTION]=0 && 'price'[PRIORITY]=1 ),filter('calendar', 'calendar'[date]<TODAY())) +
+			    CALCULATE(AVERAGE('price'[RRP]),filter('price','price'[INTERVENTION]=0 && 'price'[PRIORITY]=0 ),filter('calendar', 'calendar'[date]>=TODAY()))
+		lineageTag: b9d47844-2a40-4df9-ab90-f74392b3e8f8
+
+	measure total_records = CALCULATE(COUNT(scada[DATE]),REMOVEFILTERS())
+		formatString: 0
+		lineageTag: 935a9270-17c6-443b-9e88-61fd6ea9ee79
+
+	measure Latest_update = CALCULATE(max(scada[SETTLEMENTDATE]),REMOVEFILTERS())
+		formatString: mmm d\, yyyy h:nn AM/PM
+		lineageTag: 93e3795e-b69c-459a-b1ac-91a11951f6dd
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	column date
+		dataType: dateTime
+		isKey
+		formatString: Long Date
+		lineageTag: 455d21c1-76ce-4916-b628-fe98a4a03665
+		summarizeBy: none
+		sourceColumn: date
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 7254ad31-8f17-4c65-b90b-a212775430a3
+		summarizeBy: sum
+		sourceColumn: year
+
+	column month
+		dataType: int64
+		formatString: 0
+		lineageTag: c968c1cb-212e-4b25-b870-91e9d3abd2f5
+		summarizeBy: sum
+		sourceColumn: month
+
+	partition calendar = entity
+		mode: directLake
+		source
+			entityName: calendar
+			expressionSource: DatabaseQuery
+

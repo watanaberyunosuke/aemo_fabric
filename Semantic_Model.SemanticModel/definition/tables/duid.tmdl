@@ -1,0 +1,33 @@
+table duid
+	lineageTag: dcfc3c09-e171-429a-9024-938f74fe206d
+
+	column DUID
+		dataType: string
+		lineageTag: 43f9a044-c85b-47fa-8855-b4d37c236efb
+		summarizeBy: none
+		sourceColumn: DUID
+
+	column Region
+		dataType: string
+		lineageTag: 04467373-19c9-4fd4-9a97-622cdce1aaf6
+		summarizeBy: none
+		sourceColumn: Region
+
+	column FuelSourceDescriptor
+		dataType: string
+		lineageTag: 0bcc17fe-680a-43c2-bc28-0f044c877bcf
+		summarizeBy: none
+		sourceColumn: FuelSourceDescriptor
+
+	column Participant
+		dataType: string
+		lineageTag: 09aaf6f7-001f-4ee7-9a2c-5cf4b1e09d89
+		summarizeBy: none
+		sourceColumn: Participant
+
+	partition duid = entity
+		mode: directLake
+		source
+			entityName: duid
+			expressionSource: DatabaseQuery
+

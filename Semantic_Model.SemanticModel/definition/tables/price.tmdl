@@ -1,0 +1,805 @@
+table price
+	lineageTag: 61238259-a7a4-49df-80e8-c5ed101a9324
+
+	column SETTLEMENTDATE
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d17458f9-5505-4e13-af48-a2ea7b09b2fd
+		summarizeBy: none
+		sourceColumn: SETTLEMENTDATE
+
+	column REGIONID
+		dataType: string
+		lineageTag: 751c8caa-1370-4703-b19a-db70d07d595c
+		summarizeBy: none
+		sourceColumn: REGIONID
+
+	column INTERVENTION
+		dataType: double
+		lineageTag: d5c77ddc-2641-4690-b7ae-b0d6d4cd4f4e
+		summarizeBy: sum
+		sourceColumn: INTERVENTION
+
+	column RRP
+		dataType: double
+		lineageTag: b4b98484-22f6-4f5e-943b-0dfeea150b93
+		summarizeBy: sum
+		sourceColumn: RRP
+
+	column PRIORITY
+		dataType: int64
+		formatString: 0
+		lineageTag: 534561e5-3c56-438d-9445-658bf74538b4
+		summarizeBy: sum
+		sourceColumn: PRIORITY
+
+	column DATE
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1f4cde1b-3168-49a4-b55b-f89608deb73b
+		summarizeBy: none
+		sourceColumn: DATE
+
+	column UNIT
+		dataType: string
+		lineageTag: 45c83389-20a1-4744-9cd9-90464f9308f1
+		summarizeBy: none
+		sourceColumn: UNIT
+
+	column VERSION
+		dataType: double
+		lineageTag: b152e9b3-1665-48f2-81ca-22deca44d707
+		summarizeBy: sum
+		sourceColumn: VERSION
+
+	column RUNNO
+		dataType: double
+		lineageTag: a612aca3-451f-4901-b194-eea10a2472c1
+		summarizeBy: sum
+		sourceColumn: RUNNO
+
+	column EEP
+		dataType: double
+		lineageTag: 8469a127-7998-42eb-805f-0ad4420eb977
+		summarizeBy: sum
+		sourceColumn: EEP
+
+	column ROP
+		dataType: double
+		lineageTag: 7faa569d-091e-4d8d-8ad1-d665cc27566d
+		summarizeBy: sum
+		sourceColumn: ROP
+
+	column APCFLAG
+		dataType: double
+		lineageTag: 3248fcc7-4c52-4e5a-82b5-aba8067dcbce
+		summarizeBy: sum
+		sourceColumn: APCFLAG
+
+	column MARKETSUSPENDEDFLAG
+		dataType: double
+		lineageTag: abe246d9-2a49-4100-b2e8-e477965e9dc6
+		summarizeBy: sum
+		sourceColumn: MARKETSUSPENDEDFLAG
+
+	column TOTALDEMAND
+		dataType: double
+		lineageTag: c80c6761-6fc9-46f8-8ab2-0270463792b9
+		summarizeBy: sum
+		sourceColumn: TOTALDEMAND
+
+	column DEMANDFORECAST
+		dataType: double
+		lineageTag: 08a4ab1c-4fbd-4d07-bdc2-f238f7c0867f
+		summarizeBy: sum
+		sourceColumn: DEMANDFORECAST
+
+	column DISPATCHABLEGENERATION
+		dataType: double
+		lineageTag: 93919124-47aa-4794-be65-e15a844727ef
+		summarizeBy: sum
+		sourceColumn: DISPATCHABLEGENERATION
+
+	column DISPATCHABLELOAD
+		dataType: double
+		lineageTag: 5599de31-f4a4-41ff-9268-856b228bae67
+		summarizeBy: sum
+		sourceColumn: DISPATCHABLELOAD
+
+	column NETINTERCHANGE
+		dataType: double
+		lineageTag: 065196ad-0380-4c51-8464-d5ba0344d02d
+		summarizeBy: sum
+		sourceColumn: NETINTERCHANGE
+
+	column EXCESSGENERATION
+		dataType: double
+		lineageTag: f8e2aed0-1394-46ed-b954-ff1028c4121e
+		summarizeBy: sum
+		sourceColumn: EXCESSGENERATION
+
+	column LOWER5MINDISPATCH
+		dataType: double
+		lineageTag: c138d183-c928-43f6-ab97-d40a1bf8ab57
+		summarizeBy: sum
+		sourceColumn: LOWER5MINDISPATCH
+
+	column LOWER5MINIMPORT
+		dataType: double
+		lineageTag: 53788620-0541-4cea-8e73-c97cee0b35f7
+		summarizeBy: sum
+		sourceColumn: LOWER5MINIMPORT
+
+	column LOWER5MINLOCALDISPATCH
+		dataType: double
+		lineageTag: 9b1600f4-6f10-4fb4-9c60-efcba5ad7cc8
+		summarizeBy: sum
+		sourceColumn: LOWER5MINLOCALDISPATCH
+
+	column LOWER5MINLOCALPRICE
+		dataType: double
+		lineageTag: 94b7a929-1fdc-40ba-80f1-e29365c2feea
+		summarizeBy: sum
+		sourceColumn: LOWER5MINLOCALPRICE
+
+	column LOWER5MINLOCALREQ
+		dataType: double
+		lineageTag: bacd917a-931b-4555-bb24-a8abfd194a06
+		summarizeBy: sum
+		sourceColumn: LOWER5MINLOCALREQ
+
+	column LOWER5MINPRICE
+		dataType: double
+		lineageTag: 2b326fbd-8ec6-4f4b-a48d-69a4f5bcbe26
+		summarizeBy: sum
+		sourceColumn: LOWER5MINPRICE
+
+	column LOWER5MINREQ
+		dataType: double
+		lineageTag: c453ea4a-2686-4269-b5e9-4c35f2eadd1f
+		summarizeBy: sum
+		sourceColumn: LOWER5MINREQ
+
+	column LOWER5MINSUPPLYPRICE
+		dataType: double
+		lineageTag: a624973f-2840-4793-ae1f-69fc62b1354c
+		summarizeBy: sum
+		sourceColumn: LOWER5MINSUPPLYPRICE
+
+	column LOWER60SECDISPATCH
+		dataType: double
+		lineageTag: 2e829c9c-f5cd-44ad-bb44-595cb17022c7
+		summarizeBy: sum
+		sourceColumn: LOWER60SECDISPATCH
+
+	column LOWER60SECIMPORT
+		dataType: double
+		lineageTag: 14a6c463-5622-4cf9-bd50-01def03a3293
+		summarizeBy: sum
+		sourceColumn: LOWER60SECIMPORT
+
+	column LOWER60SECLOCALDISPATCH
+		dataType: double
+		lineageTag: 20ab0e39-dc06-4f83-907d-fca463dfba3f
+		summarizeBy: sum
+		sourceColumn: LOWER60SECLOCALDISPATCH
+
+	column LOWER60SECLOCALPRICE
+		dataType: double
+		lineageTag: eeb379ad-5a2c-48df-89c6-f426628fe375
+		summarizeBy: sum
+		sourceColumn: LOWER60SECLOCALPRICE
+
+	column LOWER60SECLOCALREQ
+		dataType: double
+		lineageTag: 5403ea2f-77d5-4bda-ae2c-22c4f4a43531
+		summarizeBy: sum
+		sourceColumn: LOWER60SECLOCALREQ
+
+	column LOWER60SECPRICE
+		dataType: double
+		lineageTag: ad13b6a8-7fe0-4088-ad6a-4a5e914e6b5a
+		summarizeBy: sum
+		sourceColumn: LOWER60SECPRICE
+
+	column LOWER60SECREQ
+		dataType: double
+		lineageTag: 26dd3f81-91ab-4e90-99e7-9311b42801cc
+		summarizeBy: sum
+		sourceColumn: LOWER60SECREQ
+
+	column LOWER60SECSUPPLYPRICE
+		dataType: double
+		lineageTag: db3fedc9-4185-4048-bc5b-0407cd514f23
+		summarizeBy: sum
+		sourceColumn: LOWER60SECSUPPLYPRICE
+
+	column LOWER6SECDISPATCH
+		dataType: double
+		lineageTag: d1a423ad-552c-4a89-8081-d19f25d5bd78
+		summarizeBy: sum
+		sourceColumn: LOWER6SECDISPATCH
+
+	column LOWER6SECIMPORT
+		dataType: double
+		lineageTag: 46b83bac-21ed-4cbc-a3d7-e8ba907f5fa5
+		summarizeBy: sum
+		sourceColumn: LOWER6SECIMPORT
+
+	column LOWER6SECLOCALDISPATCH
+		dataType: double
+		lineageTag: 6cb9f9ed-a8f5-4ea1-92c2-6e0e16b688be
+		summarizeBy: sum
+		sourceColumn: LOWER6SECLOCALDISPATCH
+
+	column LOWER6SECLOCALPRICE
+		dataType: double
+		lineageTag: 2eba4c30-b242-43f9-8fbb-e9eb9ecf68e7
+		summarizeBy: sum
+		sourceColumn: LOWER6SECLOCALPRICE
+
+	column LOWER6SECLOCALREQ
+		dataType: double
+		lineageTag: 85db279c-8fec-4724-bf78-25e4f7a2225c
+		summarizeBy: sum
+		sourceColumn: LOWER6SECLOCALREQ
+
+	column LOWER6SECPRICE
+		dataType: double
+		lineageTag: 46dc3996-5a92-4874-abcc-7fe062be195d
+		summarizeBy: sum
+		sourceColumn: LOWER6SECPRICE
+
+	column LOWER6SECREQ
+		dataType: double
+		lineageTag: 79db4f36-ef62-43ce-bf22-1fcf839a7818
+		summarizeBy: sum
+		sourceColumn: LOWER6SECREQ
+
+	column LOWER6SECSUPPLYPRICE
+		dataType: double
+		lineageTag: c6d40408-3f4b-441f-8e6d-1b627ac5007e
+		summarizeBy: sum
+		sourceColumn: LOWER6SECSUPPLYPRICE
+
+	column RAISE5MINDISPATCH
+		dataType: double
+		lineageTag: 7df1bfdb-221b-4a44-ba4e-562a72770b2c
+		summarizeBy: sum
+		sourceColumn: RAISE5MINDISPATCH
+
+	column RAISE5MINIMPORT
+		dataType: double
+		lineageTag: f7e9d7e9-57b3-4690-b2c0-6c915f5cee16
+		summarizeBy: sum
+		sourceColumn: RAISE5MINIMPORT
+
+	column RAISE5MINLOCALDISPATCH
+		dataType: double
+		lineageTag: dbff3dea-b66c-4d3f-b3b0-de741353dae1
+		summarizeBy: sum
+		sourceColumn: RAISE5MINLOCALDISPATCH
+
+	column RAISE5MINLOCALPRICE
+		dataType: double
+		lineageTag: 3a4bf875-3bb8-41b8-bce6-8bb031664147
+		summarizeBy: sum
+		sourceColumn: RAISE5MINLOCALPRICE
+
+	column RAISE5MINLOCALREQ
+		dataType: double
+		lineageTag: 464c6628-c438-40bd-9e1e-458ea5a2d21a
+		summarizeBy: sum
+		sourceColumn: RAISE5MINLOCALREQ
+
+	column RAISE5MINPRICE
+		dataType: double
+		lineageTag: e7097562-a767-49f6-8da2-4166da8509f4
+		summarizeBy: sum
+		sourceColumn: RAISE5MINPRICE
+
+	column RAISE5MINREQ
+		dataType: double
+		lineageTag: 2b539d06-fb8c-4ffa-a87c-4d299c9aad89
+		summarizeBy: sum
+		sourceColumn: RAISE5MINREQ
+
+	column RAISE5MINSUPPLYPRICE
+		dataType: double
+		lineageTag: 616d8ddc-64ee-4650-bf81-cb4078390b25
+		summarizeBy: sum
+		sourceColumn: RAISE5MINSUPPLYPRICE
+
+	column RAISE60SECDISPATCH
+		dataType: double
+		lineageTag: fce1d242-30d2-462f-9658-9b5bbfc8fc16
+		summarizeBy: sum
+		sourceColumn: RAISE60SECDISPATCH
+
+	column RAISE60SECIMPORT
+		dataType: double
+		lineageTag: 70c3aeb6-cb29-47bc-bd84-fe96f5327475
+		summarizeBy: sum
+		sourceColumn: RAISE60SECIMPORT
+
+	column RAISE60SECLOCALDISPATCH
+		dataType: double
+		lineageTag: 10fca3b1-a364-44c8-8a6e-097b5d1764cd
+		summarizeBy: sum
+		sourceColumn: RAISE60SECLOCALDISPATCH
+
+	column RAISE60SECLOCALPRICE
+		dataType: double
+		lineageTag: 50b133ec-bbe7-4a2e-a44f-451512e38aac
+		summarizeBy: sum
+		sourceColumn: RAISE60SECLOCALPRICE
+
+	column RAISE60SECLOCALREQ
+		dataType: double
+		lineageTag: a914b465-5a33-40b7-b422-53853ab3421f
+		summarizeBy: sum
+		sourceColumn: RAISE60SECLOCALREQ
+
+	column RAISE60SECPRICE
+		dataType: double
+		lineageTag: 9f077373-5076-42be-ba5c-7f1c1f6a8565
+		summarizeBy: sum
+		sourceColumn: RAISE60SECPRICE
+
+	column RAISE60SECREQ
+		dataType: double
+		lineageTag: 48de2908-af5c-4bb9-a9c7-f272da6372cf
+		summarizeBy: sum
+		sourceColumn: RAISE60SECREQ
+
+	column RAISE60SECSUPPLYPRICE
+		dataType: double
+		lineageTag: 001ffdb5-8a9e-4335-a6c1-09b3d2bf8def
+		summarizeBy: sum
+		sourceColumn: RAISE60SECSUPPLYPRICE
+
+	column RAISE6SECDISPATCH
+		dataType: double
+		lineageTag: 4fc40f13-69f5-4c0a-9952-337f42861e2d
+		summarizeBy: sum
+		sourceColumn: RAISE6SECDISPATCH
+
+	column RAISE6SECIMPORT
+		dataType: double
+		lineageTag: 0b5172e2-8d41-4533-a089-3581f3ed0453
+		summarizeBy: sum
+		sourceColumn: RAISE6SECIMPORT
+
+	column RAISE6SECLOCALDISPATCH
+		dataType: double
+		lineageTag: 7841e334-3315-406c-ae64-d04b101e6d51
+		summarizeBy: sum
+		sourceColumn: RAISE6SECLOCALDISPATCH
+
+	column RAISE6SECLOCALPRICE
+		dataType: double
+		lineageTag: 94465365-f99b-4104-a505-4ee7dbd76fa1
+		summarizeBy: sum
+		sourceColumn: RAISE6SECLOCALPRICE
+
+	column RAISE6SECLOCALREQ
+		dataType: double
+		lineageTag: 7e334da7-6580-4a26-923c-cb0735a3236d
+		summarizeBy: sum
+		sourceColumn: RAISE6SECLOCALREQ
+
+	column RAISE6SECPRICE
+		dataType: double
+		lineageTag: 0460e5e7-7cc4-4470-a45c-d63b78dbdcd6
+		summarizeBy: sum
+		sourceColumn: RAISE6SECPRICE
+
+	column RAISE6SECREQ
+		dataType: double
+		lineageTag: b409d3c9-8c10-4a4f-a9a0-28655eacced0
+		summarizeBy: sum
+		sourceColumn: RAISE6SECREQ
+
+	column RAISE6SECSUPPLYPRICE
+		dataType: double
+		lineageTag: ec88fb72-ddf4-47bb-bc21-89221e7dd1d5
+		summarizeBy: sum
+		sourceColumn: RAISE6SECSUPPLYPRICE
+
+	column AGGREGATEDISPATCHERROR
+		dataType: double
+		lineageTag: 99c6ee64-1f93-4821-bdcb-98cc933c5a3b
+		summarizeBy: sum
+		sourceColumn: AGGREGATEDISPATCHERROR
+
+	column AVAILABLEGENERATION
+		dataType: double
+		lineageTag: bd9afc11-3377-43de-acbd-2f6d3ef0e0af
+		summarizeBy: sum
+		sourceColumn: AVAILABLEGENERATION
+
+	column AVAILABLELOAD
+		dataType: double
+		lineageTag: 67021045-84b4-43d6-be87-5522501d8759
+		summarizeBy: sum
+		sourceColumn: AVAILABLELOAD
+
+	column INITIALSUPPLY
+		dataType: double
+		lineageTag: ead4aa2d-0cb8-416f-a6e7-0dde5aa41050
+		summarizeBy: sum
+		sourceColumn: INITIALSUPPLY
+
+	column CLEAREDSUPPLY
+		dataType: double
+		lineageTag: a98bd31b-b41f-47e3-878b-e9eceda9e5ea
+		summarizeBy: sum
+		sourceColumn: CLEAREDSUPPLY
+
+	column LOWERREGIMPORT
+		dataType: double
+		lineageTag: 2df5ebd9-5094-4d1b-8291-f619b771ba3b
+		summarizeBy: sum
+		sourceColumn: LOWERREGIMPORT
+
+	column LOWERREGLOCALDISPATCH
+		dataType: double
+		lineageTag: 2feb424a-3ab3-451f-ad49-d6ecb43ae5f6
+		summarizeBy: sum
+		sourceColumn: LOWERREGLOCALDISPATCH
+
+	column LOWERREGLOCALREQ
+		dataType: double
+		lineageTag: b3694096-4e85-4ad8-9356-b5e7a6a6d10e
+		summarizeBy: sum
+		sourceColumn: LOWERREGLOCALREQ
+
+	column LOWERREGREQ
+		dataType: double
+		lineageTag: 3fa5523b-c304-4f0e-82bb-8d0550f27ba4
+		summarizeBy: sum
+		sourceColumn: LOWERREGREQ
+
+	column RAISEREGIMPORT
+		dataType: double
+		lineageTag: f78f84e1-19c2-43ba-8cf0-73953be372e6
+		summarizeBy: sum
+		sourceColumn: RAISEREGIMPORT
+
+	column RAISEREGLOCALDISPATCH
+		dataType: double
+		lineageTag: dd43a891-853d-4b6d-963f-c341560a30cb
+		summarizeBy: sum
+		sourceColumn: RAISEREGLOCALDISPATCH
+
+	column RAISEREGLOCALREQ
+		dataType: double
+		lineageTag: 2cef8cd7-1fa0-48d5-a382-b6d5f734040a
+		summarizeBy: sum
+		sourceColumn: RAISEREGLOCALREQ
+
+	column RAISEREGREQ
+		dataType: double
+		lineageTag: a9325216-95af-4530-9f17-33e3b11f54bc
+		summarizeBy: sum
+		sourceColumn: RAISEREGREQ
+
+	column RAISE5MINLOCALVIOLATION
+		dataType: double
+		lineageTag: 8cfa1b1d-2bcd-4aa1-a32a-2622c0edf6ea
+		summarizeBy: sum
+		sourceColumn: RAISE5MINLOCALVIOLATION
+
+	column RAISEREGLOCALVIOLATION
+		dataType: double
+		lineageTag: edf4def4-93d1-4513-9856-d815d68b8cf7
+		summarizeBy: sum
+		sourceColumn: RAISEREGLOCALVIOLATION
+
+	column RAISE60SECLOCALVIOLATION
+		dataType: double
+		lineageTag: fcb97a03-2fd7-447e-a03e-e9b6c1d9085d
+		summarizeBy: sum
+		sourceColumn: RAISE60SECLOCALVIOLATION
+
+	column RAISE6SECLOCALVIOLATION
+		dataType: double
+		lineageTag: 24caa60f-5bef-4cc1-bcc0-0fe15c4d75d8
+		summarizeBy: sum
+		sourceColumn: RAISE6SECLOCALVIOLATION
+
+	column LOWER5MINLOCALVIOLATION
+		dataType: double
+		lineageTag: 8c769f40-6161-4442-9e02-f24ce94190cb
+		summarizeBy: sum
+		sourceColumn: LOWER5MINLOCALVIOLATION
+
+	column LOWERREGLOCALVIOLATION
+		dataType: double
+		lineageTag: b4790ae4-08ce-42ae-b536-355041137a5d
+		summarizeBy: sum
+		sourceColumn: LOWERREGLOCALVIOLATION
+
+	column LOWER60SECLOCALVIOLATION
+		dataType: double
+		lineageTag: 8ad6a20d-0da9-4d17-889f-daff27f1a0a8
+		summarizeBy: sum
+		sourceColumn: LOWER60SECLOCALVIOLATION
+
+	column LOWER6SECLOCALVIOLATION
+		dataType: double
+		lineageTag: 66b9a23a-a30f-44a1-b137-bf59a82b8c55
+		summarizeBy: sum
+		sourceColumn: LOWER6SECLOCALVIOLATION
+
+	column RAISE5MINVIOLATION
+		dataType: double
+		lineageTag: b3b3ef72-6378-478f-bbbb-1996270bd6c6
+		summarizeBy: sum
+		sourceColumn: RAISE5MINVIOLATION
+
+	column RAISEREGVIOLATION
+		dataType: double
+		lineageTag: b5d8da7f-4013-47b9-96a8-1811a782112f
+		summarizeBy: sum
+		sourceColumn: RAISEREGVIOLATION
+
+	column RAISE60SECVIOLATION
+		dataType: double
+		lineageTag: 90c95ba5-e6ea-47e1-897e-1ffd518fd912
+		summarizeBy: sum
+		sourceColumn: RAISE60SECVIOLATION
+
+	column RAISE6SECVIOLATION
+		dataType: double
+		lineageTag: 4102655f-8c7f-4e7b-9dea-cfd1bac6e88f
+		summarizeBy: sum
+		sourceColumn: RAISE6SECVIOLATION
+
+	column LOWER5MINVIOLATION
+		dataType: double
+		lineageTag: fef28b9a-574a-47ab-8fc6-541d8c3ffe5f
+		summarizeBy: sum
+		sourceColumn: LOWER5MINVIOLATION
+
+	column LOWERREGVIOLATION
+		dataType: double
+		lineageTag: c4c4de68-95f6-4141-80b2-081689ed76df
+		summarizeBy: sum
+		sourceColumn: LOWERREGVIOLATION
+
+	column LOWER60SECVIOLATION
+		dataType: double
+		lineageTag: 2b2fc9cc-e0a5-4f60-9f8f-2a66865853ac
+		summarizeBy: sum
+		sourceColumn: LOWER60SECVIOLATION
+
+	column LOWER6SECVIOLATION
+		dataType: double
+		lineageTag: cef676ff-daa1-4f03-9cf9-fc344bb6542f
+		summarizeBy: sum
+		sourceColumn: LOWER6SECVIOLATION
+
+	column RAISE6SECRRP
+		dataType: double
+		lineageTag: 8fc9df0d-1115-4754-9029-8ad4a49cdf3e
+		summarizeBy: sum
+		sourceColumn: RAISE6SECRRP
+
+	column RAISE6SECROP
+		dataType: double
+		lineageTag: 5b42fa8a-8b90-43be-b63b-7058a05d32d1
+		summarizeBy: sum
+		sourceColumn: RAISE6SECROP
+
+	column RAISE6SECAPCFLAG
+		dataType: double
+		lineageTag: bbab445b-9710-4014-a295-9be80296434c
+		summarizeBy: sum
+		sourceColumn: RAISE6SECAPCFLAG
+
+	column RAISE60SECRRP
+		dataType: double
+		lineageTag: 50a7fdbb-b544-4df7-80da-fc830cc0f026
+		summarizeBy: sum
+		sourceColumn: RAISE60SECRRP
+
+	column RAISE60SECROP
+		dataType: double
+		lineageTag: 55115871-7c76-4cca-8b5e-df9353379ebd
+		summarizeBy: sum
+		sourceColumn: RAISE60SECROP
+
+	column RAISE60SECAPCFLAG
+		dataType: double
+		lineageTag: baf0d455-0dda-4f14-aada-a680299be580
+		summarizeBy: sum
+		sourceColumn: RAISE60SECAPCFLAG
+
+	column RAISE5MINRRP
+		dataType: double
+		lineageTag: 604263db-468d-46ff-9783-0f0af83a4cde
+		summarizeBy: sum
+		sourceColumn: RAISE5MINRRP
+
+	column RAISE5MINROP
+		dataType: double
+		lineageTag: 8f11b1cb-ff62-409d-9c7b-499fc806524b
+		summarizeBy: sum
+		sourceColumn: RAISE5MINROP
+
+	column RAISE5MINAPCFLAG
+		dataType: double
+		lineageTag: b0be2f82-1a1a-4fbc-b70b-62b0b1f0eef4
+		summarizeBy: sum
+		sourceColumn: RAISE5MINAPCFLAG
+
+	column RAISEREGRRP
+		dataType: double
+		lineageTag: 9be9d4a3-3081-44f2-be30-b4deee8b4676
+		summarizeBy: sum
+		sourceColumn: RAISEREGRRP
+
+	column RAISEREGROP
+		dataType: double
+		lineageTag: dc386e1f-0f28-4094-ba81-14b5d262959d
+		summarizeBy: sum
+		sourceColumn: RAISEREGROP
+
+	column RAISEREGAPCFLAG
+		dataType: double
+		lineageTag: 89e6c17c-1b6a-4055-9b42-1dd0d47b8657
+		summarizeBy: sum
+		sourceColumn: RAISEREGAPCFLAG
+
+	column LOWER6SECRRP
+		dataType: double
+		lineageTag: 63ac5f0e-0af7-453a-a0e7-8dcaf83719a4
+		summarizeBy: sum
+		sourceColumn: LOWER6SECRRP
+
+	column LOWER6SECROP
+		dataType: double
+		lineageTag: 6ca53316-258a-4636-818b-31c833735615
+		summarizeBy: sum
+		sourceColumn: LOWER6SECROP
+
+	column LOWER6SECAPCFLAG
+		dataType: double
+		lineageTag: 02b0ef2d-ade6-4542-812a-cba4769f464b
+		summarizeBy: sum
+		sourceColumn: LOWER6SECAPCFLAG
+
+	column LOWER60SECRRP
+		dataType: double
+		lineageTag: 7fce8e8e-5c80-4984-afa7-d3ab1df1e18e
+		summarizeBy: sum
+		sourceColumn: LOWER60SECRRP
+
+	column LOWER60SECROP
+		dataType: double
+		lineageTag: 6355a940-a9c6-49cf-a96c-6a2f7c951f7d
+		summarizeBy: sum
+		sourceColumn: LOWER60SECROP
+
+	column LOWER60SECAPCFLAG
+		dataType: double
+		lineageTag: 0e5c3951-01eb-4c3c-a102-62069c382801
+		summarizeBy: sum
+		sourceColumn: LOWER60SECAPCFLAG
+
+	column LOWER5MINRRP
+		dataType: double
+		lineageTag: 09cb1289-86d1-4d45-9b96-dd8bba189882
+		summarizeBy: sum
+		sourceColumn: LOWER5MINRRP
+
+	column LOWER5MINROP
+		dataType: double
+		lineageTag: 0c2cb855-afd0-4e41-80c4-438c2e9a94fb
+		summarizeBy: sum
+		sourceColumn: LOWER5MINROP
+
+	column LOWER5MINAPCFLAG
+		dataType: double
+		lineageTag: 288fb6da-d242-44bd-b44b-67005a786a89
+		summarizeBy: sum
+		sourceColumn: LOWER5MINAPCFLAG
+
+	column LOWERREGRRP
+		dataType: double
+		lineageTag: 328e8ed0-4874-445b-a1a7-9d2cbb4c237c
+		summarizeBy: sum
+		sourceColumn: LOWERREGRRP
+
+	column LOWERREGROP
+		dataType: double
+		lineageTag: 21482466-597d-46ec-8337-f70474852c83
+		summarizeBy: sum
+		sourceColumn: LOWERREGROP
+
+	column LOWERREGAPCFLAG
+		dataType: double
+		lineageTag: 5b57adfb-1664-4f0c-bf2a-fccddb477516
+		summarizeBy: sum
+		sourceColumn: LOWERREGAPCFLAG
+
+	column RAISE6SECACTUALAVAILABILITY
+		dataType: double
+		lineageTag: 368945c4-fc8b-4d1c-8c75-9767cd61b2f8
+		summarizeBy: sum
+		sourceColumn: RAISE6SECACTUALAVAILABILITY
+
+	column RAISE60SECACTUALAVAILABILITY
+		dataType: double
+		lineageTag: a7f7c7cb-e4e2-461d-8e1a-39aebe3aacc2
+		summarizeBy: sum
+		sourceColumn: RAISE60SECACTUALAVAILABILITY
+
+	column RAISE5MINACTUALAVAILABILITY
+		dataType: double
+		lineageTag: 2fa458d6-1595-4f08-81c9-660cc182749a
+		summarizeBy: sum
+		sourceColumn: RAISE5MINACTUALAVAILABILITY
+
+	column RAISEREGACTUALAVAILABILITY
+		dataType: double
+		lineageTag: f46c697f-c89b-4fca-92de-6b536afcd9a8
+		summarizeBy: sum
+		sourceColumn: RAISEREGACTUALAVAILABILITY
+
+	column LOWER6SECACTUALAVAILABILITY
+		dataType: double
+		lineageTag: 90dbd430-d9b1-41b8-a2fb-d60fe57913fc
+		summarizeBy: sum
+		sourceColumn: LOWER6SECACTUALAVAILABILITY
+
+	column LOWER60SECACTUALAVAILABILITY
+		dataType: double
+		lineageTag: ca4b3b82-27c5-47f8-994f-ba56835737db
+		summarizeBy: sum
+		sourceColumn: LOWER60SECACTUALAVAILABILITY
+
+	column LOWER5MINACTUALAVAILABILITY
+		dataType: double
+		lineageTag: 222c779b-0300-47e4-ae99-9de6a87feb5e
+		summarizeBy: sum
+		sourceColumn: LOWER5MINACTUALAVAILABILITY
+
+	column LOWERREGACTUALAVAILABILITY
+		dataType: double
+		lineageTag: 05ad645f-64a8-4944-a347-84082a13ad50
+		summarizeBy: sum
+		sourceColumn: LOWERREGACTUALAVAILABILITY
+
+	column LORSURPLUS
+		dataType: double
+		lineageTag: b0377bd2-e299-4a0d-a718-48b025afca29
+		summarizeBy: sum
+		sourceColumn: LORSURPLUS
+
+	column LRCSURPLUS
+		dataType: double
+		lineageTag: 596d5fff-9e4e-4fe6-b554-50af6e9143f0
+		summarizeBy: sum
+		sourceColumn: LRCSURPLUS
+
+	column file
+		dataType: string
+		lineageTag: 8d40f808-feb2-4f9e-ba9b-76b283d65103
+		summarizeBy: none
+		sourceColumn: file
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: fa7ae74c-ac90-45b6-9e9f-8ab91a2b6086
+		summarizeBy: sum
+		sourceColumn: year
+
+	partition price = entity
+		mode: directLake
+		source
+			entityName: price
+			expressionSource: DatabaseQuery
+

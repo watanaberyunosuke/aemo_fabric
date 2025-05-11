@@ -1,0 +1,22 @@
+table states
+	lineageTag: c1f34b4a-fa24-4da5-9489-b6c829d9c6d9
+
+	column RegionID
+		dataType: string
+		isHidden
+		lineageTag: 74f7448b-30f9-4f9c-b32d-b89d29a4997e
+		summarizeBy: none
+		sourceColumn: RegionID
+
+	column States
+		dataType: string
+		lineageTag: 20aabcb6-8030-4329-9f97-ab0261e541ea
+		summarizeBy: none
+		sourceColumn: States
+
+	partition states = entity
+		mode: directLake
+		source
+			entityName: states
+			expressionSource: DatabaseQuery
+
